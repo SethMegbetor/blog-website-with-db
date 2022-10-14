@@ -16,6 +16,7 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
+/**** url for the mongo db database ****/ 
 mongoose.connect("mongodb+srv://admin:mamamia@cluster0.6v2nrtx.mongodb.net/blogDB");
 // mongoose.connect("mongodb+srv://admin:mamamia@cluster0.6v2nrtx.mongodb.net/blogDB", {useNewUrlParser: true});
 
